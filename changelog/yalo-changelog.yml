@@ -1,0 +1,46 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/yalochat/chat-sdk/blob/main/CHANGELOG.md
+scheme: semver (per-component tags in the chat-sdk monorepo, e.g. web-sdk/vX.Y.Z,
+  proto/bindings/go/vX.Y.Z, plus top-level releases)
+current_version: 2.4.1
+entries:
+- version: 2.4.1
+  date: '2026-07-16'
+  breaking: false
+  highlights:
+  - Chore release cleaning build commands
+- version: web-sdk/v1.2.1
+  date: '2026-07-15'
+  breaking: false
+  highlights:
+  - Scroll customization and better alignment for chat input
+- version: web-sdk/v1.2.0
+  date: '2026-07-15'
+  breaking: false
+  highlights:
+  - Loading animation and CSS variables
+  - Quick replies visibility fixes (web + flutter)
+  - GCP cache update of latest build on deploy
+- version: web-sdk/v1.1.1
+  date: '2026-07-09'
+  breaking: false
+  highlights:
+  - Prevent sending a null string to the auth service
+- version: web-sdk/v1.1.0
+  date: '2026-07-09'
+  breaking: false
+  highlights:
+  - Added 'silent' log level
+  - Restyled product confirmation
+  - Loading animations on widget buttons
+- version: web-sdk/v1.0.0
+  date: '2026-07-06'
+  breaking: false
+  highlights:
+  - First 1.0 web-sdk release; product confirmation redesign
+  - Unified onCommand into registerCommand (web + flutter)
+notes:
+- The changelog covers the public chat-sdk monorepo (Flutter/Android/iOS/web SDKs
+  + protobuf contract, proto contract VERSION 2.4.1). Yalo's platform docs changelog
+  is not public (docs.yalo.com is deactivated).

@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: searched
+url: https://www.yalo.ai/seguridad
+certifications:
+- ISO/IEC 27001
+- SOC 2 Type I
+- SOC 2 Type II
+contact: infosec@yalochat.com
+practices:
+- Private Virtual Cloud (VPC) infrastructure with role-based access control (RBAC)
+- Automated system updates with traceability
+- Physical, administrative, and technical controls for data in transit and at rest
+- Independent security audits
+- Structured information risk management
+infrastructure_providers:
+- Google Cloud
+- AWS
+- Auth0
+- WhatsApp/Meta
+evidence:
+- source: https://www.yalo.ai/seguridad
+  keywords:
+  - ISO/IEC 27001
+  - SOC 2 Type I and Type II
+  - infosec@yalochat.com
+notes:
+- SOC 2 reports and compliance documentation available on request via infosec@yalochat.com.
+- No vulnerability disclosure or bug bounty program is mentioned on the page.

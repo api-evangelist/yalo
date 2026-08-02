@@ -1,0 +1,46 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/yalochat/chat-sdk
+packages:
+- language: dart
+  registry: pub.dev
+  name: yalo_chat_flutter_sdk
+  version: 0.0.3
+  url: https://pub.dev/packages/yalo_chat_flutter_sdk
+  install: flutter pub add yalo_chat_flutter_sdk
+  official: true
+  description: Official Yalo Flutter chat SDK (cross-platform chat UI for Yalo's
+    messaging platform; iOS, Android, Web)
+- language: swift
+  registry: swift-package-manager
+  name: chat-sdk
+  url: https://github.com/yalochat/chat-sdk
+  install: 'Add package dependency: https://github.com/yalochat/chat-sdk (Package.swift
+    at repo root)'
+  official: true
+  description: iOS SDK distributed via Swift Package Manager from the yalochat/chat-sdk
+    monorepo
+- language: javascript
+  registry: none
+  name: yalo-chat-web-sdk
+  version: 1.2.1
+  url: https://github.com/yalochat/chat-sdk/tree/main/web-sdk
+  install: 'Source in yalochat/chat-sdk web-sdk/ (package.json marked private: true;
+    not published to npm as of 2026-07-21)'
+  official: true
+  description: Web SDK (Lit web components + @bufbuild/protobuf) in the chat-sdk
+    monorepo; releases tagged web-sdk/vX.Y.Z
+- language: kotlin
+  registry: none
+  name: android-sdk
+  url: https://github.com/yalochat/chat-sdk/tree/main/android-sdk
+  install: Source in yalochat/chat-sdk android-sdk/ (no Maven Central artifact found
+    as of 2026-07-21)
+  official: true
+  description: Android SDK in the chat-sdk monorepo
+notes:
+- Maven Central search for "yalo" returned no artifacts (2026-07-21).
+- CocoaPods has no YaloChatSDK pod; iOS distribution is SPM via the GitHub repo.
+- Legacy npm packages published by Yalo engineering accounts (engyalo, yalodev) exist
+  (generator-yalo-hapi, yalo-design-system, react-yalo-components) but are internal
+  tooling/design-system packages, not API client SDKs.

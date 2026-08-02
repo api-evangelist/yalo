@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/yalochat/chat-sdk
+summary: Yalo ships a cross-platform Chat SDK of prebuilt, customizable chat UI components
+  for embedding Yalo's conversational commerce channel into customer apps and sites.
+families:
+- family: Flutter chat UI
+  platform: flutter (iOS, Android, Web)
+  package: yalo_chat_flutter_sdk (pub.dev)
+  url: https://pub.dev/packages/yalo_chat_flutter_sdk
+  components:
+  - YaloChatClient (channelId + organizationId + optional userId)
+  - Chat widget (theme, custom app bar, attachment button, shop/cart callbacks, openContext)
+  - ChatTheme theming system (doc/theming.md)
+  - registerCommand custom command hooks (doc/commands.md)
+  message_types:
+  - text
+  - image
+  - video
+  - voice
+  - product messages and carousels
+  - button messages
+  - CTA (call-to-action) messages
+- family: Web chat components
+  platform: web (Lit web components)
+  package: yalo-chat-web-sdk (in-repo, releases tagged web-sdk/vX.Y.Z)
+  url: https://github.com/yalochat/chat-sdk/tree/main/web-sdk
+  components:
+  - Chat widget web components (TypeScript/Lit, protobuf transport via @bufbuild/protobuf)
+  - Product confirmation, quick replies, cart widgets (per release notes)
+- family: Native mobile SDKs
+  platform: android (android-sdk/), ios (ios-sdk/ + Package.swift SPM)
+  url: https://github.com/yalochat/chat-sdk
+  components:
+  - Native wrappers of the chat UI for Android and iOS
+notes:
+- Transport contract for these components is the published protobuf SdkMessage envelope
+  (grpc/yalo-sdk-message.proto) covering chat, cart, promotion, product, and custom
+  command events.

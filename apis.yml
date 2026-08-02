@@ -1,8 +1,12 @@
 aid: yalo
 name: Yalo
-description: 'Yalo is a company surfaced as a portfolio company of sierra-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Yalo is an intelligent sales platform that uses AI agents to help consumer
+  brands sell through conversational channels like WhatsApp, mobile apps, and phone
+  calls, managing complete customer journeys across more than 40 countries. Its Oris
+  AI sales agent, conversational commerce platform, and cross-platform Chat SDK (Flutter,
+  Android, iOS, and web, with a published gRPC/protobuf message contract) serve CPG,
+  financial services, telco, and eCommerce customers including Nestle, Coca-Cola FEMSA,
+  Mondelez, PepsiCo, and Unilever.'
 url: https://raw.githubusercontent.com/api-evangelist/yalo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +14,30 @@ x-backed-by:
 - sierra-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://cdn.prod.website-files.com/6864212f89b49a1b6c4568db/6864ded3363f8aff1d64389c_Logo-white.svg
 tags:
 - Company
-- Ai
+- AI
+- Conversational Commerce
+- WhatsApp
+- Messaging
+- Sales
+- Chat
+- AI Agents
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +46,39 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://yalochat.com/
+  url: https://www.yalo.ai/
+- type: Blog
+  url: https://www.yalo.ai/yalo-blog
+- type: Support
+  url: https://support.yalo.com/
+- type: GitHubOrganization
+  url: https://github.com/yalochat
+- type: TermsOfService
+  url: https://www.yalo.ai/terminos-y-condiciones
+- type: PrivacyPolicy
+  url: https://www.yalo.ai/politica-de-privacidad
+- type: TrustCenter
+  url: security/yalo-trust-center.yml
+- type: Compliance
+  url: https://www.yalo.ai/seguridad
+- type: Packages
+  url: packages/yalo-packages.yml
+- type: SDKs
+  url: packages/yalo-packages.yml
+- type: Protobuf
+  url: grpc/yalo-sdk-message.proto
+- type: LLMsTxt
+  url: llms/yalo-llms.txt
+- type: WellKnown
+  url: well-known/yalo-well-known.yml
+- type: ChangeLog
+  url: changelog/yalo-changelog.yml
+- type: Components
+  url: components/yalo-components.yml
+- type: DomainSecurity
+  url: security/yalo-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1
